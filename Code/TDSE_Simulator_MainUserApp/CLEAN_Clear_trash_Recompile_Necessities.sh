@@ -1,0 +1,54 @@
+#!/bin/bash
+
+
+rm EXE_codeFileGenerator_1D_CN
+rm EXE_prepareDataToPlot_1D_CN
+rm EXE_simulator_1D_CN_ABC_tINDEP
+rm EXE_simulator_1D_CN_ABC_tDEP
+rm EXE_codeFileGenerator_2D_CN
+rm EXE_prepareDataToPlot_2D_CN
+rm EXE_simulator_2D_CN_tINDEP
+rm EXE_simulator_2D_CN_tDEP
+rm EXE_codeFileGenerator_nD_XO_ZERO_CN_ABC_tDEP
+rm CODE_simulator_nD_XO_ZERO_CN_ABC_tDEP
+rm EXE_simulator_nD_XO_ZERO_CN_ABC_tDEP
+rm EXE_simulator_1D_CN_tINDEP_ImTimeEv
+rm EXE_simulator_1D_CN_tDEP_ImTimeEv
+rm EXE_simulator_2D_CN_tINDEP_ImTimeEv
+rm EXE_simulator_nD_XO_ZERO_CN_tDEP_ImTimeEv
+rm EXE_codeFileGenerator_2D_XO_KINADV_BornHeun
+rm EXE_simulator_2D_XO_KINADV_BornHeun_tINDEP
+
+rm DATA_rawSimulationData_1D_CN.txt
+rm DATA_dataToPlot_1D_CN.txt
+rm DATA_potentialData_1D_CN.txt
+rm DATA_rawSimulationData_2D_CN.txt
+rm DATA_dataToPlot_2D_CN.txt
+rm DATA_trajectoriesToPlot_1D_CN.txt
+rm DATA_trajectoriesToPlot_2D_CN.txt
+rm DATA_rawSimulationData_nD_XO_ZERO_CN_ABC_tDEP.txt
+rm DATA_trajectoriesToPlot_nD_XO_ZERO_CN_ABC_tDEP.txt
+rm DATA_probabilityToPlot_nD_XO_ZERO_CN_ABC_tDEP.txt
+rm DATA_potentialToPlot_nD_XO_ZERO_CN_ABC_tDEP.txt
+rm DATA_tensorProduct_nD_XO_ZERO_CN_ABC_tDEP.txt
+rm DATA_potentialToPlot_2D_XO_CN_KinAdv_BornHeun_tINDEP.txt
+rm DATA_probabilityToPlot_2D_XO_CN_KinAdv_BornHeun_tINDEP.txt
+rm DATA_trajectoriesToPlot_2D_XO_CN_KinAdv_BornHeun_tINDEP.txt
+
+rm CODE_simulator_1D_CN_ABC_tINDEP.cpp
+rm CODE_simulator_1D_CN_ABC_tDEP.cpp
+rm CODE_simulator_2D_CN_tINDEP.cpp
+rm CODE_simulator_2D_CN_tDEP.cpp
+rm CODE_simulator_nD_XO_ZERO_CN_ABC_tDEP.cpp
+rm CODE_simulator_1D_CN_tINDEP_ImTimeEv.cpp
+rm CODE_simulator_1D_CN_tDEP_ImTimeEv.cpp
+rm CODE_simulator_2D_CN_tINDEP_ImTimeEv.cpp
+rm CODE_simulator_nD_XO_ZERO_CN_tDEP_ImTimeEv.cpp
+rm CODE_simulator_2D_XO_KINADV_BornHeun_tINDEP.cpp
+
+g++ -Wall -O CODE_codeFileGenerator_1D_CN.cpp -o EXE_codeFileGenerator_1D_CN
+g++ -Wall -O CODE_prepareDataToPlot_1D_CN.cpp -o EXE_prepareDataToPlot_1D_CN
+g++ -Wall -O CODE_codeFileGenerator_2D_CN.cpp -o EXE_codeFileGenerator_2D_CN
+g++ -Wall -O CODE_prepareDataToPlot_2D_CN.cpp -o EXE_prepareDataToPlot_2D_CN
+g++ -Wall -O CODE_codeFileGenerator_nD_XO_ZERO_CN_ABC_tDEP.cpp -o EXE_codeFileGenerator_nD_XO_ZERO_CN_ABC_tDEP
+g++ -Wall -O CODE_codeFileGenerator_2D_XO_KINADV_BornHeun.cpp -o EXE_codeFileGenerator_2D_XO_KINADV_BornHeun

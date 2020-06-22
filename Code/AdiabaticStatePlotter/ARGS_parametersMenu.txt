@@ -1,0 +1,14 @@
+adiabaticStates---------
+double d=7.0, L, o;if(x<0){ } else{ if(abs(y)>d){return 0.0;} L=2.0*d; o=-d; } return sqrt(2.0/L)*(-j*j*PI*PI/(L*L))*sin(j*PI*(y-o)/L);
+potential(x,y)----------
+double sigmax=2.0, sigmay=2.0, mux=-6.0, muy=0.0, kx=0.0, ky=0.0; return pow(1.0/(2*PI*sigmax*sigmax),0.25)*exp(J*kx*x-0.25*pow((x-mux)/sigmax,2))*sin(PI*(y-ymin)/(ymax-ymin))*sqrt(2/(ymax-ymin));
+jmax--------------------
+10
+nx_ny-------------------
+250 150
+xmin_x1max---------------
+-10.0 10.0
+x2min_x2max---------------
+-10.0 10.0
+expLabel----------------
+diffyy_Estados_adiabaticos

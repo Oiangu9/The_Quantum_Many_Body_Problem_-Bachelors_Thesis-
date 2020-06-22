@@ -1,0 +1,70 @@
+12
+double sigmax=1.0, sigmay=1.0, mux=-2.0, muy=0.0, kx=4.50, ky=0.0; return pow(1.0/(2*PI*sigmax*sigmax),0.25)*exp(J*kx*x-0.25*pow((x-mux)/sigmax,2)) * pow(1.0/(2*PI*sigmay*sigmay),0.25)*exp(J*ky*y-0.25*pow((y-muy)/sigmay,2));
+double a=2.5, b=3.5, d=1.0;if(((x>=a) & (x<=b)) & (y>=d || y<=-d)){ return 1000000.0;}else {return 0.0;}
+1.0 1.0
+500 500
+-6.0 -7.0
+14.0 7.0
+2700
+0.001
+20
+1.0
+eigenstatesForSectionsInx------------------------
+double c=2.5, d=3.5, s=1.0, L, o;if(x<c || x>d){ L=ymax-ymin; o=ymin;} else{ if(abs(y)>s){return 0.0;} L=2.0*s; o=-s; } return sqrt(2.0/L)*sin(j*PI*(y-o)/L);
+diffyEigenstatesForSectionsInx--------------------
+double c=2.5, d=3.5, s=1.0, L, o;if(x<c || x>d){ L=ymax-ymin; o=ymin;} else{ if(abs(y)>s){return 0.0;} L=2.0*s; o=-s; } return sqrt(2.0/L)*(j*PI/L)*cos(j*PI*(y-o)/L);
+diffyyEigenstatesForSectionsInx-------------------------
+double c=2.5, d=3.5, s=1.0, L, o;if(x<c || x>d){ L=ymax-ymin; o=ymin;} else{ if(abs(y)>s){return 0.0;} L=2.0*s; o=-s; } return sqrt(2.0/L)*(-j*j*PI*PI/(L*L))*sin(j*PI*(y-o)/L);
+eigenstatesForSectionsIny-------------------------------
+double c=2.5, d=3.5, s=1.0, L, o;  if((x<c) & (y<-s || y>s)){ L = c-xmin; o=xmin;}  else if((x>d) & (y<-s || y>s)){L = xmax-d; o=d;}  else{ if(y<-s || y>s){return 0.0;} L=xmax-xmin; o=xmin;}  return sqrt(2.0/L)*sin(j*PI*(x-o)/L);
+diffxEigenstatesForSectionsIny--------------------------
+double c=2.5, d=3.5, s=1.0, L, o;  if((x<c) & (y<-s || y>s)){L = c-xmin; o=xmin;}  else if((x>d) & (y<-s || y>s)){L = xmax-d; o=d;} else{ if(y<-s || y>s){return 0.0;} L=xmax-xmin; o=xmin;} return sqrt(2.0/L)*(j*PI/L)*cos(j*PI*(x-o)/L);
+diffxxEigenstatesForSectionsIny--------------------------
+double c=2.5, d=3.5, s=1.0, L, o;  if((x<c) & (y<-s || y>s)){L = c-xmin; o=xmin;} else if((x>d) & (y<-s || y>s)){L = xmax-d; o=d;}  else{ if(y<-s || y>s){return 0.0;} L=xmax-xmin; o=xmin;} return sqrt(2.0/L)*(-j*j*PI*PI/(L*L))*sin(j*PI*(x-o)/L);
+10 1
+Bx--------------------------------
+double c=2.5, d=3.5, s=1.0, L; if(x<c || x>d){ L=ymax-ymin;}else{ L=2.0*s; } if(j%2==0){return 0.0;} else{return 2*sqrt(2*L)/(j*PI);}
+By------------------------------------
+double c=2.5, d=3.5, s=1.0, L;  if((x<c) & (y<-s || y>s)){L = c-xmin;} else if((x>d) & (y<-s || y>s)){L = xmax-d;}  else{ L=xmax-xmin;} if(j%2==0){return 0.0;} else{return 2*sqrt(2*L)/(j*PI);}
+a_x b_x a_y b_y-------------------------
+0.0 0.0 0.0 0.0
+24
+0.013
+2
+G
+SingleSlit/k4.5 y Sin G,J jmax10
+12
+double sigmax=1.0, sigmay=1.0, mux=-2.0, muy=0.0, kx=4.50, ky=0.0; return pow(1.0/(2*PI*sigmax*sigmax),0.25)*exp(J*kx*x-0.25*pow((x-mux)/sigmax,2)) * pow(1.0/(2*PI*sigmay*sigmay),0.25)*exp(J*ky*y-0.25*pow((y-muy)/sigmay,2));
+double a=2.5, b=3.5, d=1.0;if(((x>=a) & (x<=b)) & (y>=d || y<=-d)){ return 1000000.0;}else {return 0.0;}
+1.0 1.0
+500 500
+-6.0 -7.0
+14.0 7.0
+2700
+0.001
+20
+1.0
+eigenstatesForSectionsInx------------------------
+double c=2.5, d=3.5, s=1.0, L, o;if(x<c || x>d){ L=ymax-ymin; o=ymin;} else{ if(abs(y)>s){return 0.0;} L=2.0*s; o=-s; } return sqrt(2.0/L)*sin(j*PI*(y-o)/L);
+diffyEigenstatesForSectionsInx--------------------
+double c=2.5, d=3.5, s=1.0, L, o;if(x<c || x>d){ L=ymax-ymin; o=ymin;} else{ if(abs(y)>s){return 0.0;} L=2.0*s; o=-s; } return sqrt(2.0/L)*(j*PI/L)*cos(j*PI*(y-o)/L);
+diffyyEigenstatesForSectionsInx-------------------------
+double c=2.5, d=3.5, s=1.0, L, o;if(x<c || x>d){ L=ymax-ymin; o=ymin;} else{ if(abs(y)>s){return 0.0;} L=2.0*s; o=-s; } return sqrt(2.0/L)*(-j*j*PI*PI/(L*L))*sin(j*PI*(y-o)/L);
+eigenstatesForSectionsIny-------------------------------
+double c=2.5, d=3.5, s=1.0, L, o;  if((x<c) & (y<-s || y>s)){ L = c-xmin; o=xmin;}  else if((x>d) & (y<-s || y>s)){L = xmax-d; o=d;}  else{ if(y<-s || y>s){return 0.0;} L=xmax-xmin; o=xmin;}  return sqrt(2.0/L)*sin(j*PI*(x-o)/L);
+diffxEigenstatesForSectionsIny--------------------------
+double c=2.5, d=3.5, s=1.0, L, o;  if((x<c) & (y<-s || y>s)){L = c-xmin; o=xmin;}  else if((x>d) & (y<-s || y>s)){L = xmax-d; o=d;} else{ if(y<-s || y>s){return 0.0;} L=xmax-xmin; o=xmin;} return sqrt(2.0/L)*(j*PI/L)*cos(j*PI*(x-o)/L);
+diffxxEigenstatesForSectionsIny--------------------------
+double c=2.5, d=3.5, s=1.0, L, o;  if((x<c) & (y<-s || y>s)){L = c-xmin; o=xmin;} else if((x>d) & (y<-s || y>s)){L = xmax-d; o=d;}  else{ if(y<-s || y>s){return 0.0;} L=xmax-xmin; o=xmin;} return sqrt(2.0/L)*(-j*j*PI*PI/(L*L))*sin(j*PI*(x-o)/L);
+20 1
+Bx--------------------------------
+double c=2.5, d=3.5, s=1.0, L; if(x<c || x>d){ L=ymax-ymin;}else{ L=2.0*s; } if(j%2==0){return 0.0;} else{return 2*sqrt(2*L)/(j*PI);}
+By------------------------------------
+double c=2.5, d=3.5, s=1.0, L;  if((x<c) & (y<-s || y>s)){L = c-xmin;} else if((x>d) & (y<-s || y>s)){L = xmax-d;}  else{ L=xmax-xmin;} if(j%2==0){return 0.0;} else{return 2*sqrt(2*L)/(j*PI);}
+a_x b_x a_y b_y-------------------------
+0.0 0.0 0.0 0.0
+24
+0.013
+2
+G
+SingleSlit/k4.5 y Sin G,J jmax20

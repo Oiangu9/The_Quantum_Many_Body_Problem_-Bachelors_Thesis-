@@ -1,0 +1,44 @@
+ks_to_use------------------------
+0.15 0.25 0.35 0.65
+numk-----------------------------
+4
+initialPsi-----------------------
+double sigmax=2.0, mux=-8.0, kx=1.5, a=10; if(abs(y)>a){return 0;} else{return pow(1.0/(2*PI*sigmax*sigmax),0.25)*exp(J*kx*x-0.25*pow((x-mux)/sigmax,2))*sqrt(2/(2*a))*sin(PI*(y+a)/(2*a));}
+potential------------------------
+double A=100, w=2, d=3.0, mu=0;if((y<=d) & (y>=-d)){ return 0.0;}else { if(x<=0){ return A*exp(-0.5*(x-mu)*(x-mu)/(w*w/16));} else {return A;}}
+EigenstatesSectionsInx-----------
+double d=3.0, L, o;if(x<0){ L=ymax-ymin; o=ymin;} else{ if(abs(y)>d){return 0.0;} L=2.0*d; o=-d; } return sqrt(2.0/L)*sin(j*PI*(y-o)/L);
+DiffyEigenstatesSectionsInx------No_hace_falta_para_CN2
+double d=3.0, L, o;if(x<0){ L=ymax-ymin; o=ymin;} else{ if(abs(y)>d){return 0.0;} L=2.0*d; o=-d; } return sqrt(2.0/L)*(j*PI/L)*cos(j*PI*(y-o)/L);
+DiffyyEigenstatesSectionsInx-----No_hace_falta_para_CN2
+double d=3.0, L, o;if(x<0){ L=ymax-ymin; o=ymin;} else{ if(abs(y)>d){return 0.0;} L=2.0*d; o=-d; } return sqrt(2.0/L)*(-j*j*PI*PI/(L*L))*sin(j*PI*(y-o)/L);
+jmax-----------------------------
+18
+chiSumTolerance------------------No_hace_falta_para_CN2
+0.95
+numTrajs-------------------------
+150
+nx ny_CN----------------------------CN
+340 240
+nx ny_X0----------------------------XO
+750 600
+xmin xmax------------------------
+-20.0 10.0
+ymin ymax------------------------
+-13.0 13.0
+numIt----------------------------
+4200
+dt-------------------------------
+0.004
+massx massy----------------------
+1.0 1.0
+hbar-----------------------------
+1.0
+xBound---------------------------
+0.0
+outputDataEvery------------------
+60
+gif------------------------------
+G
+ExpLabel-------------------------
+L_6_
